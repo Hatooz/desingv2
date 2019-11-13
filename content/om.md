@@ -21,8 +21,9 @@ Om
 
 Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/om.md`.
 
-Skriv några kloka ord om kursen?
+En kurs i design och ramverk. Gud nåde oss.
 
-Lägg till en representativ bild för kursen, enligt ditt egna val.
+Kursens github repo kan hittas <a href="https://github.com/dbwebb-se/design">här</a>.<br>
+Mitt github repo för denna kurs kan hittas <a href="https://github.com/Hatooz/desingv2">här</a>.
 
-[FIGURE src=image/car.png?w=300 caption="En fin bil som demobild."]
+[FIGURE src=image/mdmd.jpg?w=300 caption="En fin bil som demobild."]
