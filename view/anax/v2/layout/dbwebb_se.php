@@ -93,6 +93,7 @@ $route = "route-" . str_replace("/", "-", $di->get("request")->getRoute());
         <div class="row">
             <header class="region-header" role="banner">
                 <!-- header -->
+                
                 <?php if (regionHasContent("header")) : ?>
                 <div class="region-header-col-1">
                     <?php renderRegion("header") ?>
@@ -100,6 +101,7 @@ $route = "route-" . str_replace("/", "-", $di->get("request")->getRoute());
                 <?php endif; ?>
 
                 <!-- header-col-1 -->
+                
                 <?php if (regionHasContent("header-col-1")) : ?>
                 <div class="region-header-col-1">
                     <?php renderRegion("header-col-1") ?>
@@ -107,6 +109,7 @@ $route = "route-" . str_replace("/", "-", $di->get("request")->getRoute());
                 <?php endif; ?>
 
                 <!-- header-col-2 -->
+                
                 <?php if (regionHasContent("header-col-2")) : ?>
                 <div class="region-header-col-2">
                     <?php renderRegion("header-col-2") ?>
@@ -114,6 +117,7 @@ $route = "route-" . str_replace("/", "-", $di->get("request")->getRoute());
                 <?php endif; ?>
 
                 <!-- header-col-3 -->
+                
                 <?php if (regionHasContent("header-col-3")) : ?>
                 <div class="region-header-col-3">
                     <?php renderRegion("header-col-3") ?>
@@ -177,6 +181,7 @@ $route = "route-" . str_replace("/", "-", $di->get("request")->getRoute());
 <div class="outer-wrap outer-wrap-flash-message">
     <div class="inner-wrap inner-wrap-flash-message">
         <div class="row">
+        
             <div class="region-flash-message">
                 <?php renderRegion("flash-message") ?>
             </div>
@@ -206,6 +211,7 @@ $route = "route-" . str_replace("/", "-", $di->get("request")->getRoute());
 <div class="outer-wrap outer-wrap-main">
     <div class="inner-wrap inner-wrap-main">
         <div class="row">
+        
 
 <?php
 $sidebarLeft  = regionHasContent("sidebar-left");

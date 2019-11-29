@@ -1,0 +1,216 @@
+/*!
+ * LESS version of the stylesheet for design kmom02.
+ *
+ * This stylesheet is for the design course and kmom01. Its intention is to
+ * use kmom01.css and lessify the style and use this as a wrapper for the new
+ * style.
+ */
+@import "normalize.css/normalize.less";
+
+/**
+ * Internal self contained modules, save in directory module/.
+ */
+//  @import "module/kmom01.less";
+//  @import "module/stylechooser.less";  // Just an example module
+
+
+
+/**
+  * Base style to affect HTML elements on a general scale.
+  */
+//  @import "base/base_default.less";
+@import "base/base.less";
+
+
+
+/**
+  * Layout style for general structure of header, navbar, main, footer
+  * and other regions of the page including route specific styles.
+  */
+//  @import "layout/layout_default.less";
+//  @import "layout/responsive_default.less";
+@import "layout/layout.less";
+@import "layout/responsive.less";
+@import "layout/regions.less"; // To add style for ?regions
+
+/**
+ * Font Awesome.
+ */
+@import "@fortawesome/fontawesome-free/less/fontawesome.less";
+@import "@fortawesome/fontawesome-free/less/solid.less";
+@import "@fortawesome/fontawesome-free/less/brands.less";
+
+
+/**
+ * A responsive menu.
+ */
+@import "@desinax/responsive-menu/less/responsive-menu.less";
+@import "@desinax/responsive-menu/less/media-queries.less";
+/**
+  * My own settings, not currently in their own module.
+  */
+
+
+// * {
+//   padding: 0;
+//   margin: 0;
+//   box-sizing: border-box;
+// }
+
+// body {
+//   color: white;
+// }
+
+// .site-logo {
+//   display: none;
+// }
+
+// .wrap-all {
+//   width: 100%;
+//   margin: auto;
+//   text-align: center;
+// }
+
+// .wrap-all a {
+//   color: white;
+// }
+
+.rm-swipe-right a {
+  display: none;
+}
+
+// .outer-wrap-header,
+// .inner-wrap-header {
+//   height: 10vh;
+//   background-color: #eee;
+//   margin: 0;
+//   padding: 0;
+// }
+
+// .rm-navbar {
+//   text-align: center;
+// }
+
+// .my-navbar li {
+//   display: inline-block;
+//   margin-right: 10%;
+//   color: black;
+// }
+
+// .outer-wrap-footer {
+//   background-color: white;
+// }
+
+// .site-footer {
+//   background-color: white;
+// }
+
+// /* grid and grid elements */
+
+// .region-header {
+//   display: grid;
+//   grid-template-columns: 1fr 8fr 1fr;
+// }
+
+// .site-logo-text {
+//   font-size: 2rem;
+//   font-weight: bold;
+// }
+
+// .site-logo-text-icon {
+//   display: none;
+// }
+
+// .outer-wrap-flash,
+// .outer-wrap-breadcrumb {
+//   display: none;
+// }
+
+// .outer-wrap-main {
+//   min-height: 90vh;
+//   background-image: url("http://c1.peakpx.com/wallpaper/216/142/374/iphone-laptop-macbook-pro-notebook-wallpaper-preview.jpg");
+//   background-size: cover;
+// }
+
+// .region-main {
+//   width: 60%;
+//   margin: auto;
+//   text-align: left;
+//   color: white;
+// }
+
+// .toc ul,
+// .toc li {
+//   list-style: none;
+//   color: white;
+//   text-align: left;
+//   margin-left: 10px;
+// }
+
+// .toc a {
+//   color: white;
+// }
+
+// .has-sidebar-left {
+//   margin-left: 0;
+
+// }
+
+// .region-main img {
+//   filter: grayscale(100%);
+// }
+
+// .article h1 {
+//   margin-top: 0;
+
+// }
+
+// .article {
+//   padding-top: 30px;
+// }
+
+
+// .footer-column-wrapper {
+//   background-color: white;
+//   color: black;
+//   display: grid;
+//   grid-template-columns: 1fr 1fr 1fr;
+//   padding: 10px;
+// }
+
+// .inner-wrap-main .row {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr;
+// }
+
+
+// @media (max-width: 1000px) {
+
+//   /* grid and grid elements on page collaps. Change gtc to a single fraction */
+//   .region-header {
+//     display: grid;
+//     grid-template-columns: 1fr;
+//   }
+
+//   .footer-column-wrapper {
+//     background-color: black;
+//     display: grid;
+//     grid-template-columns: 1fr;
+//   }
+
+//   .rm-swipe-right a {
+//     color: white;
+//     display: inline-block;
+//   }
+// }
+
+
+@media (max-width: 1000px) {
+
+
+
+  .rm-swipe-right a {
+    color: white;
+    display: inline-block;
+  }
+}

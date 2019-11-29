@@ -2,18 +2,17 @@
 title: "Min fina titel"
 
 views:
-     byline:
+    byline:
         region: main
         template: anax/v2/block/default
-        sort: 2
+        sort: 1
         data:
-            meta: 
+            meta:
                 type: single
                 route: block/byline
 ---
 
-Min me-sida i kursen design
-=========================
+# Min me-sida i kursen design
 
 Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/index.md`.
 

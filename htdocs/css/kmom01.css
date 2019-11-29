@@ -14,8 +14,9 @@
 .rm-navbar-max {
     display: none;
 }
- 
- body{
+
+/* Kmom01 CSS code */
+/* body{
      background: rgb(0, 71, 80);
      color: white;
      
@@ -30,4 +31,106 @@
 
  .wrap-all a{
      color: white;
- }
+ } */
+
+/* quick code before LESS compilation code */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(0, 71, 80);
+    color: white;
+}
+
+.site-logo {
+    display: none;
+}
+
+.wrap-all {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.wrap-all a {}
+
+.outer-wrap-header {
+    height: 5vh;
+    background: white;
+}
+
+/* .rm-navbar {
+	width: 100%;
+	border: 2px solid white;
+	text-align: left;
+	background: white;
+	text-align: center;
+} */
+
+.block,
+.toc {
+    display: none;
+}
+
+.toc li {
+    display: none;
+}
+
+.my-navbar li {
+    display: inline;
+    margin-right: 10%;
+}
+
+.region-breadcrumb {
+    display: none;
+}
+
+.outer-wrap-footer {
+    background-color: black;
+}
+
+.site-footer {
+    background-color: black;
+}
+
+/* grid and grid elements */
+
+.region-header {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+}
+
+.region-flash {
+    display: none;
+}
+
+.region-main {
+    height: 95vh;
+    background-image: url("http://c1.peakpx.com/wallpaper/216/142/374/iphone-laptop-macbook-pro-notebook-wallpaper-preview.jpg");
+    background-size: cover;
+}
+
+.footer-column-wrapper {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+}
+
+@media (max-width: 1000px) {
+
+    /* grid and grid elements on page collaps. Change gtc to a single fraction */
+    .region-header {
+        display: none;
+    }
+
+    .footer-column-wrapper {
+        background-color: black;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

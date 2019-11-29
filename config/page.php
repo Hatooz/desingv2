@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Configuration file for page which can create and put together web pages
  * from a collection of views. Through configuration you can add the
@@ -19,8 +20,8 @@ return [
             "lang" => "sv",
             "stylesheets" => [
                 // Change here to set another default stylesheet
-               // "css/dbwebb-se.min.css",
-                "css/kmom01.css",
+                // "css/dbwebb-se.min.css",
+                "css/kmom02.css",
             ],
             "javascripts" => [
                 "js/responsive-menu.js",
@@ -63,6 +64,7 @@ return [
                 "navbarConfig" => require __DIR__ . "/navbar/responsive.php",
             ],
         ],
+
         [
             "region" => "footer",
             "template" => "anax/v2/columns/multiple_columns",
@@ -83,7 +85,7 @@ return [
                     ]
                 ]
             ],
-            "sort" => 1
+            "sort" => 99
         ],
         [
             "region" => "footer",
@@ -92,7 +94,7 @@ return [
                 "class"  => "site-footer",
                 "contentRoute" => "block/footer",
             ],
-            "sort" => 2
+            "sort" => 100
         ],
     ],
 ];

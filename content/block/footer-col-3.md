@@ -1,3 +1,6 @@
-#### Footer col 3
+#### Nummer 3
 
-Med brödtext i ett stycke som säger något trevligt om just detta block, eller kanske en lista av länkar.
+Kolumn nummer tre,<br>
+Står på sne,<br>
+Vågar han plocka upp tvålen,<br>
+Han vill inte smaka på ålen.
