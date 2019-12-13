@@ -2,13 +2,13 @@
  * Typographic defaults.
  */
 // Magic number and base fontsize
-@magicNumber: 24px; // 22px
+@magicNumber:  24px;  // 22px
 @fontSizeBody: 16px;
 
 // Default font-families
 @fontFamilyHeadings: "serif";
-@fontFamilyBody: "Arial";
-@fontFamilyCode: "monospace";
+@fontFamilyBody:     "sans-serif";
+@fontFamilyCode:     "monospace";
 
 // header h1-h6 font sixe
 @fontSizeH1: 2.375em;
@@ -34,34 +34,34 @@
 
 // fontsize code blocks
 //@fontSizeCodeInline:  1.25em;
-@fontSizeCodeBlock: 1.0em;
+@fontSizeCodeBlock:   1.0em;
 @lineHeightCodeBlock: 1.5;
 
-// fontsize super and subscripts
-@fontSizeSupSub: 0.75em;
+ // fontsize super and subscripts
+ @fontSizeSupSub: 0.75em;
 
-// fontsize smaller
-@fontSizeSmall: 0.875em;
+ // fontsize smaller
+ @fontSizeSmall: 0.875em;
 
 @colorTypographyMark: #000;
-@bgColorTypographyMark: #ff9;
+@bgColorTypographyMark:  #ff9;
 
 @colorBlockquoteBorder: #eee;
 @sizeBlockquoteBorder: 4px;
 
 @borderColorCodeInline: #ccc;
-@bgColorCodeInline: #eee;
-@bgColorCodeBlock: #eee;
-@colorCodeBlockBorder: #ccc;
-@borderSizeCodeblock: 1px;
+@bgColorCodeInline:     #eee;
+@bgColorCodeBlock:      #eee;
+@colorCodeBlockBorder:  #ccc;
+@borderSizeCodeblock:   1px;
 
-@colorTableHeaderBorder: #aaa;
-@sizeTableHeaderBorder: 2px;
-@bgColorTableStripe: #fafafa;
-@colorTableRowBorder: #ccc;
-@colorTableRowHover: #000;
-@bgColorTableRowHover: #f6f6f6;
-@colorTableRowBorderHover: #666;
+@colorTableHeaderBorder:    #aaa;
+@sizeTableHeaderBorder:     2px;
+@bgColorTableStripe:        #fafafa;
+@colorTableRowBorder:       #ccc;
+@colorTableRowHover:        #000;
+@bgColorTableRowHover:      #f6f6f6;
+@colorTableRowBorderHover:  #666;
 
 @bgColorHr: #fff;
 
@@ -98,7 +98,6 @@
      * Settings for headings H1-H6
      */
     .typographyHeadings() {
-
         h1,
         h2,
         h3,
@@ -122,17 +121,17 @@
             margin-bottom: @magicNumber - @borderSizeH1;
 
             // If header below h1, then assume larger margin top
-            &~h1,
-            &~h2,
-            &~h3,
-            &~h4,
-            &~h5,
-            &~h6 {
+            & ~ h1,
+            & ~ h2,
+            & ~ h3,
+            & ~ h4,
+            & ~ h5,
+            & ~ h6 {
                 margin-top: @magicNumber * 2;
             }
 
             // Single margin when subheader follows directly
-            &+h2 {
+            & + h2 {
                 margin-top: @magicNumber;
             }
         }
@@ -144,7 +143,7 @@
             margin-bottom: @magicNumber - @borderSizeH2;
             border-bottom: @borderSizeH2 solid @colorH2BorderBottom;
 
-            &+h3 {
+            & + h3 {
                 margin-top: @magicNumber;
             }
         }
@@ -156,7 +155,7 @@
             margin-bottom: @magicNumber - @borderSizeH3;
             border-bottom: @borderSizeH3 solid @colorH3BorderBottom;
 
-            &+h4 {
+            & + h4 {
                 margin-top: @magicNumber;
             }
         }
@@ -168,7 +167,7 @@
             margin-bottom: @magicNumber - @borderSizeH4;
             border-bottom: @borderSizeH4 solid @colorH4BorderBottom;
 
-            &+h5 {
+            & + h5 {
                 margin-top: @magicNumber;
             }
         }
@@ -179,7 +178,7 @@
             margin-bottom: @magicNumber - @borderSizeH5;
             border-bottom: @borderSizeH5 solid @colorH5BorderBottom;
 
-            &+h6 {
+            & + h6 {
                 margin-top: @magicNumber;
             }
         }
@@ -259,7 +258,6 @@
      * Display source code.
      */
     .typographyCodeElements() {
-
         pre,
         code,
         kbd,
@@ -381,7 +379,6 @@
      * on table cells has to be 1.5*@magic-number.
      */
     .typographyTableElements() {
-
         article table,
         .table,
         .table1,
@@ -444,7 +441,6 @@
         // Stripe each even row in table
         table.striped {
             tbody {
-
                 tr:nth-child(even) td,
                 tr.even td {
                     background-color: @bgColorTableStripe;
@@ -484,12 +480,12 @@
     /**
      * Enable all default typographic elements.
      */
-    .activateDefaultTypography() {
-        #desinax-hgrid.typographyHeadings();
-        #desinax-hgrid.typographyTextElements();
-        #desinax-hgrid.typographyCodeElements();
-        #desinax-hgrid.typographyListElements();
-        #desinax-hgrid.typographyTableElements();
-        #desinax-hgrid.typographyOtherElements();
-    }
+     .activateDefaultTypography() {
+         #desinax-hgrid.typographyHeadings();
+         #desinax-hgrid.typographyTextElements();
+         #desinax-hgrid.typographyCodeElements();
+         #desinax-hgrid.typographyListElements();
+         #desinax-hgrid.typographyTableElements();
+         #desinax-hgrid.typographyOtherElements();
+     }
 }

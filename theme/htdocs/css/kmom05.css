@@ -4729,50 +4729,6 @@ a.rm-button.rm-clicked .rm-button-face-2 {
     display: none;
   }
 }
-.inner-wrap-flash {
-  display: none;
-}
-.outer-wrap-main {
-  min-height: 90vh;
-  background-image: url("http://c1.peakpx.com/wallpaper/216/142/374/iphone-laptop-macbook-pro-notebook-wallpaper-preview.jpg");
-  background-size: cover;
-}
-.outer-wrap-main a {
-  color: white;
-}
-.outer-wrap-breadcrumb {
-  display: none;
-}
-.article {
-  background: grey;
-  margin-top: 24px;
-  margin-bottom: 12px;
-  border-radius: 10px;
-  padding: 12px;
-  color: white;
-}
-.region-main {
-  background: grey;
-  margin-top: 24px;
-  margin-bottom: 12px;
-  border-radius: 10px;
-  color: white;
-}
-.byline {
-  background: grey;
-  margin-top: 24px;
-  margin-bottom: 12px;
-  border-radius: 10px;
-  padding: 12px;
-  color: white;
-}
-.wrap-sidebar {
-  background: grey;
-  margin-top: 24px;
-  margin-bottom: 12px;
-  border-radius: 10px;
-  color: white;
-}
 /**
  * Show off the regions used in the website, to ease styling.
  */
@@ -5017,6 +4973,15 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
 }
+/**
+ * Figure with ASCIINEMA
+ */
+/**
+ * Figure with Codepen
+ */
+/** --------------------------------------------------------------
+ * Figure through .figure
+ */
 /**
   * My own settings, not currently in their own module.
   */
@@ -5309,4 +5274,168 @@ hr::after {
 }
 .hgrid .inner-wrap {
   background-image: url("../img/magic-number-24px.png");
+}
+figure.figure,
+figure.asciinema,
+figure.codepen,
+figure.figure-codepen {
+  display: table;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 24px;
+  /* Chrome shinks images in td */
+  /* Position the images */
+}
+figure.figure img {
+  max-width: 100%;
+  display: block;
+}
+figure.figure figcaption {
+  display: table-caption;
+  caption-side: bottom;
+  padding-top: 12px;
+}
+figure.figure figcaption p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-style: italic;
+}
+figure.figure td img {
+  max-width: none;
+}
+figure.figure.center {
+  clear: both;
+  margin: auto;
+}
+figure.figure.center figcaption {
+  text-align: center;
+}
+figure.figure.left {
+  float: left;
+  margin-right: 0.5em;
+}
+figure.figure.right {
+  float: right;
+  margin-left: 0.5em;
+}
+@media screen and (max-width: 963px) {
+  figure.figure.left.w67,
+  figure.figure.right.w67 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w67 img,
+  figure.figure.right.w67 img {
+    width: 962.5px;
+  }
+}
+@media screen and (max-width: 733px) {
+  figure.figure.left.w50,
+  figure.figure.right.w50 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w50 img,
+  figure.figure.right.w50 img {
+    width: 733.33333333px;
+  }
+}
+@media screen and (max-width: 688px) {
+  figure.figure.left.w40,
+  figure.figure.right.w40 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w40 img,
+  figure.figure.right.w40 img {
+    width: 687.5px;
+  }
+}
+@media screen and (max-width: 550px) {
+  figure.figure.left.w33,
+  figure.figure.right.w33 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w33 img,
+  figure.figure.right.w33 img {
+    width: 550px;
+  }
+}
+@media screen and (max-width: 367px) {
+  figure.figure.left.w25,
+  figure.figure.right.w25 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w25 img,
+  figure.figure.right.w25 img {
+    width: 366.66666667px;
+  }
+}
+figure.asciinema {
+  display: block;
+}
+figure.asciinema figcaption {
+  display: block;
+}
+figure.asciinema .asciicast {
+  margin: 0 !important;
+}
+figure.codepen,
+figure.figure-codepen {
+  width: 100%;
+}
+.wrap-all {
+  filter: grayscale(0%);
+}
+.inner-wrap-flash {
+  display: none;
+}
+.outer-wrap-main {
+  min-height: 90vh;
+  background: linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+}
+.outer-wrap-main a {
+  color: white;
+}
+.outer-wrap-breadcrumb {
+  display: none;
+}
+.article {
+  margin-top: 24px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  padding: 12px;
+  color: white;
+}
+.region-main {
+  margin-top: 24px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  color: white;
+}
+.byline {
+  margin-top: 24px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  padding: 12px;
+  color: white;
+}
+.wrap-sidebar {
+  margin-top: 24px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  color: white;
+}
+.site-logo-text-icon {
+  display: none;
+}
+.site-logo-text a {
+  color: white;
 }
