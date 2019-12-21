@@ -1,0 +1,202 @@
+/*!
+ * LESS version of the stylesheet for design kmom03.
+ *
+ * This stylesheet is for the design course and kmom01. Its intention is to
+ * use kmom01.css and lessify the style and use this as a wrapper for the new
+ * style.
+ */
+
+/**
+ * Internal self contained modules, save in directory module/.
+ */
+//  @import "module/kmom01.less";
+@import "module/stylechooser.less"; // Just an example module
+
+/**
+ * Font Awesome.
+ */
+@import "@fortawesome/fontawesome-free/less/fontawesome.less";
+@import "@fortawesome/fontawesome-free/less/solid.less";
+@import "@fortawesome/fontawesome-free/less/brands.less";
+
+
+/**
+ * A responsive menu.
+ */
+@import "@desinax/responsive-menu/less/responsive-menu.less";
+@import "@desinax/responsive-menu/less/media-queries.less";
+/**
+ /**
+ * Import the typographic grid.
+ */
+@import "@desinax/typographic-grid/less/typography-font-families.less";
+@import "@desinax/typographic-grid/less/typography-defaults.less";
+/**
+  * Base style to affect HTML elements on a general scale.
+  */
+// @import "base/base_default.less";
+//@import "base/base.less";
+
+
+
+/**
+  * Layout style for general structure of header, navbar, main, footer
+  * and other regions of the page including route specific styles.
+  */
+//  @import "layout/layout_default.less";
+@import "layout/responsive_default.less";
+// @import "layout/layout_kmom05.less";
+//@import "layout/responsive.less";
+@import "layout/regions.less"; // To add style for ?regions
+
+
+/**
+ * Import the vertical grid.
+ */
+@import "@desinax/vertical-grid/less/grid.less";
+@import "layout/vgrid_kmom05.less";
+@import "@desinax/figure/less/asciinema.less";
+@import "@desinax/figure/less/codepen.less";
+@import "@desinax/figure/less/figure.less";
+
+// Default grid, change to fit your requirements.
+// @columnWidth:   30;
+// @gutterWidth:   10;
+// @columns:       24;
+// @gridType:      "float"; // "flex"
+
+
+
+/**
+  * My own settings, not currently in their own module.
+  */
+
+body {
+  #desinax-hgrid.font(@fontSizeBody);
+}
+
+// Activate grid and affect all typographic elements
+#desinax-hgrid.activateDefaultTypography();
+
+// Show the grid
+.hgrid .inner-wrap {
+  @gridImage: "../img/magic-number-@{magicNumber}.png";
+  #desinax-hgrid.showGrid(@gridImage);
+}
+
+// Enable style from the module and optinally add customized layout
+figure.figure {
+  #desinax-figure.figure();
+}
+
+figure.asciinema {
+  &:extend(figure.figure);
+  #desinax-figure.asciinema();
+}
+
+figure.codepen,
+figure.figure-codepen {
+  &:extend(figure.figure);
+  #desinax-figure.codepen();
+}
+
+ .wrap-all{
+   filter: grayscale(0%);
+ }
+
+
+ .inner-wrap-flash {
+  display: none;
+}
+
+.outer-wrap-main {
+  min-height: 90vh;
+  background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%),url("https://storage.needpix.com/rsynced_images/light-2935944_1280.png");
+//   background-image: url("https://storage.needpix.com/rsynced_images/light-2935944_1280.png");
+  background-size: contain;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+ 
+
+.outer-wrap-header a {
+    color: red;
+}
+.outer-wrap-main a {
+  color: white;
+  font-weight: bolder;
+}
+
+.outer-wrap-breadcrumb {
+  display: none;
+}
+.outer-wrap-flash{
+    display: none;
+}
+
+.article {
+  // background: #4f2a1f;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  padding: 12px;
+  color: white;
+  font-weight: bolder;
+
+}
+
+.region-main {
+  // background: #4f2a1f;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  // padding: 4px;
+  color: white;
+}
+
+.byline {
+  // background: #4f2a1f;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  padding: 12px;
+  color: white;
+}
+
+.wrap-sidebar {
+//   background: red;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+
+  color: white;
+}
+
+.site-logo-text-icon{
+  display: none;
+}
+
+.site-logo-text a{
+  color: black;
+}
+ 
+.outer-wrap-header{
+    background: black;
+}
+.rm-navbar{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: white;
+}
+
+.outer-wrap-footer{
+    background: black;
+    color: white;
+}
+
+.row{
+    margin-bottom: 0;
+}

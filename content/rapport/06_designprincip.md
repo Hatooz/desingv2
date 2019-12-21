@@ -1,0 +1,21 @@
+# Design Rapport
+
+## Urval
+Jag valde att arbeta med 3 sidor från 3 olika kategorier till skillnad från de senaste två kursmomenten. Återigen valde jag sidor med intressant innehåll från mitt eget perspektiv. Sidorna som valdes var: <br>
+1) Path of Exile (ett spel) - www.pathofexile.com<br>
+2) Komplett (e-commerce sida för elektronik och teknik) - www.komplett.se<br>
+3) Netflix (netflix and chilllll!!!!) - www.netflix.com<br><br>
+Det bakgrundsmaterialet jag använde mig av var i stort sett föreläsningarna och instuktionerna på dbwebb.
+
+## Path of Exile<br>
+Syftet med denna webbplats är för att marknadsföra spelet Path of Exile. Webbplatsen omfattar info, användarkonton, forum och försäljning av spelet. Path of Exile är ett rätt mörkt och makabert spel, som spelas ut i en feodal fantasivärld och detta speglas i sidans design. Sidan har en mörk design med relativt mörka bilder på en mörk bakgrund. Texten är en har en matt guldfärg som ger bra kontrast men ljusar inte upp sidan för mycket. Sidan använder sig av en röd accentfärg och menytexterna är färgade med en eld-gul färg. Main diven ligger på en bakgrund som ser ut som en antik som stärker känslan av en feodal värld eller system. Jag tycker designprincipen som står ut mest är balans. Sidan använder sig flitigt av färger som stärker den känslan de utvecklarna vill ha fram av en dyster, förtryckande värld där man är så ensam och sårbar. Temat håller för alla undersidor.
+
+## Komplett.se<br>
+Komplett.se är en en e-commerce sida som riktar sig mot den skandinaviska marknaden för elektronik och teknik. Syftet med sidan är simpelt...att sälja så mycket saker som möjligt. Sidan har en trevlig, ljus hemsida med det typiska sökfältet man alltid ser på e-commerce sidor. Sidan har en header som sträcker sig över hela skärmens bredd, och sen en main div som har tomma marginaler på vardera sida. Gult är den färgen sidan har valt att identifiera sig med i både loggor och bannerar. Trots att det är jul så har sidan faktiskt inte så mycket inslag av rött eller grönt alls, något som man annars brukar se vid såna här högtider.  Istället har den fiffigt lagt lite snöiga bakgrunder på bilderna på vissa av de prylarna de annonserar. Sidans layout är gridbaserad och det känns direkt som en harmonisk designprincip då allt faller snyggt på plats på ett sätt som är lätt och behagligt för ögat. Detta tycker jag gynnar denna sida, då man som besökare och eventuell köpare får en mer trevlig upplevelse på sidan. På undersidorna listas produkter ut som en lista där varje produkt får en lika stor yta, oberoende på vilken produkt det är. Detta är åter något som skapar harmoni och balans och gör det lätt för ögat.
+
+## Netflix<br>
+Netflix, en stream service för filmer och serier. Syftet med sidan är att användaren sku kunna streama filmer och serier när, var och hur som helst. Hemsidan ser trevlig ut med en förvrängd  (som upplevs ha något slags djup) som lovar många nya och spännande upplevelser. Bakgrunder har en något mörkare overlay lager på sig, och sen en ljusare logga och “skaffa ditt konto nu” annons. Hade jag inte redan varit kund hade jag blivit väldigt sugen på att bli det bara genom att titta på denna hemsidan. Sidan kan man säga är indelad i 5 olika delar man kan skrolla sig till. Den första är ovannämnda “landing page”, sen kommer 3 stycken där utvecklarna vill informera att man kan titta på många olika apparater (tv, dator, mobil o.s.v.), och att man kan ladda ner filmer/episoder för att titta på de offline vid senare tillfälle om man så önskar. Sist kommer ett stycke med vanliga frågor och svar som kan ge snabb och viktig info till eventuella nya kunder. Det är ett par olika designprinciper jag tänker på när jag är på netflix hemsidan, asymmetrisk balans i layouten, harmonisk balans i färger, och rörelse i form av animeringar. Om man inte är kund är det inga andra undersidor man kan besöka. Men som inloggad kund kommer man till sin privata profil där filmer och serier är utplacerade på en rörlig grid, så igen återkommer det här med rörelse på användarens profil, samtidigt som att utbudet visualiseras på en grid som ger en harmonsik balans till det hela. 
+
+
+## Övrigt
+Hatem Mohi El Din. Enskild rapport.

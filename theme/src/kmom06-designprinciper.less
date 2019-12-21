@@ -1,0 +1,194 @@
+/*!
+ * LESS version of the stylesheet for design kmom03.
+ *
+ * This stylesheet is for the design course and kmom01. Its intention is to
+ * use kmom01.css and lessify the style and use this as a wrapper for the new
+ * style.
+ */
+
+/**
+ * Internal self contained modules, save in directory module/.
+ */
+//  @import "module/kmom01.less";
+@import "module/stylechooser.less"; // Just an example module
+
+/**
+ * Font Awesome.
+ */
+@import "@fortawesome/fontawesome-free/less/fontawesome.less";
+@import "@fortawesome/fontawesome-free/less/solid.less";
+@import "@fortawesome/fontawesome-free/less/brands.less";
+
+
+/**
+ * A responsive menu.
+ */
+@import "@desinax/responsive-menu/less/responsive-menu.less";
+@import "@desinax/responsive-menu/less/media-queries.less";
+/**
+ /**
+ * Import the typographic grid.
+ */
+@import "@desinax/typographic-grid/less/typography-font-families.less";
+@import "@desinax/typographic-grid/less/typography-defaults.less";
+/**
+  * Base style to affect HTML elements on a general scale.
+  */
+// @import "base/base_default.less";
+//@import "base/base.less";
+
+
+
+/**
+  * Layout style for general structure of header, navbar, main, footer
+  * and other regions of the page including route specific styles.
+  */
+//  @import "layout/layout_default.less";
+@import "layout/responsive_default.less";
+// @import "layout/layout_kmom05.less";
+//@import "layout/responsive.less";
+@import "layout/regions.less"; // To add style for ?regions
+
+
+/**
+ * Import the vertical grid.
+ */
+@import "@desinax/vertical-grid/less/grid.less";
+@import "layout/vgrid_kmom05.less";
+@import "@desinax/figure/less/asciinema.less";
+@import "@desinax/figure/less/codepen.less";
+@import "@desinax/figure/less/figure.less";
+
+// Default grid, change to fit your requirements.
+// @columnWidth:   30;
+// @gutterWidth:   10;
+// @columns:       24;
+// @gridType:      "float"; // "flex"
+
+
+
+/**
+  * My own settings, not currently in their own module.
+  */
+
+body {
+  #desinax-hgrid.font(@fontSizeBody);
+}
+
+// Activate grid and affect all typographic elements
+#desinax-hgrid.activateDefaultTypography();
+
+// Show the grid
+.hgrid .inner-wrap {
+  @gridImage: "../img/magic-number-@{magicNumber}.png";
+  #desinax-hgrid.showGrid(@gridImage);
+}
+
+// Enable style from the module and optinally add customized layout
+figure.figure {
+  #desinax-figure.figure();
+}
+
+figure.asciinema {
+  &:extend(figure.figure);
+  #desinax-figure.asciinema();
+}
+
+figure.codepen,
+figure.figure-codepen {
+  &:extend(figure.figure);
+  #desinax-figure.codepen();
+}
+
+ .wrap-all{
+   filter: grayscale(0%);
+ }
+
+
+ .inner-wrap-flash {
+  display: none;
+}
+.outer-wrap-header{
+  background-color: black;
+}
+.rm-navbar{
+  font-size: 1.2rem;
+  font-weight: bolder;
+  color: white;
+}
+.site-logo-text a{
+  color: black;
+}
+.row{
+  margin-bottom: 0;
+}
+.outer-wrap-main {
+  min-height: 90vh;
+  background-color: black;
+  color: black;
+  filter: grayscale(100%);
+}
+.outer-wrap-main a{
+  color: black;
+}
+
+.outer-wrap-main:hover,
+.outer-wrap-main:hover a{
+    min-height: 90vh;
+    // background-color: blue;
+    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+background-size: 1800% 1800%;
+animation: rainbow 18s ease infinite;
+    color: white;
+    filter: grayscale(0%);  
+    transition: 1s;
+  }
+
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+ 
+
+.outer-wrap-breadcrumb {
+  display: none;
+}
+
+.article {
+  // background: #4f2a1f;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  padding: 12px;
+ }
+
+.region-main {
+  // background: #4f2a1f;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  // padding: 4px;
+ }
+
+.byline {
+  // background: #4f2a1f;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  padding: 12px;
+ }
+
+.wrap-sidebar {
+  // background: #4f2a1f;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+
+ }
+
+.site-logo-text-icon{
+  display: none;
+}
+
+ 

@@ -1,0 +1,5 @@
+# Designelement
+
+
+<img src="image/colorface.jpg?src=colorface.jpg&width=800" alt="kabbe">
+Jag valde att, för både designelement och principer, göra simplistiska teman som ändå använder sig av lite olika designaspekter. För element  använde jag bilder, gradient och färger (för bakgrund), typografi och kontrast för texten på sidan. Jag hittade en bild (ovan) som jag tyckte passade väldigt bra för detta kmom då det i mitt tycke symboliserar nästan allt som har gåtts igenom för design momentet. Det har färger, mönster, punkter, gradienter och är i sig en bild med space förhållanden mellan sina element. Jag valde också att ha bakgrunden fixerad så den bibehålls över både korta som långa text/innehållsektioner. Själva bilden som jag satte som bakgrund har i sig en vit bakgrund. Detta funkade inte med den vita texten jag har på sidan. Därför fick jag lägga denna bilden som ett tredje element på backgrundsgradienten i CSS så att det blev som en färgoverlay på bilden vilket i sin tur gav en kontrast som funkade med den vita texten.
